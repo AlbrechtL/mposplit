@@ -1,0 +1,16 @@
+name: mposplit
+version: 0.1
+summary: A small tool to convert a 3D MPO-file into two JPEG-files.
+description: 
+  A small tool to convert a 3D MPO-file into two JPEG-files.
+confinement: strict
+
+apps:
+  mposplit:
+    command: usr/bin/mposplit
+
+parts:
+  mposplit:
+    plugin: cmake
+    source: ../
+
